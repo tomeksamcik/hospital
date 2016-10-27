@@ -11,7 +11,7 @@ public class Quarantine {
 
 	public Quarantine(String subjects) {
 		for (String subject : subjects.split(",")) {
-			Patient patient = Patient.getPatient(subject);
+			Patient patient = PatientFactory.getPatient(subject);
 			patients.add(patient);
 		}
 	}
