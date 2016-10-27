@@ -27,15 +27,11 @@ public class Patient {
 	}
 
 	public void wait40Days() {
-		setHealthStatus(healthStatus.transition(cures));
+		healthStatus = healthStatus.transition(cures);
 	}
 
 	public void cureWith(Cure cure) {
 		cures.add(cure);
-	}
-
-	public void setHealthStatus(HealthStatus healthStatus) {
-		this.healthStatus = healthStatus;
 	}
 
 	@Override

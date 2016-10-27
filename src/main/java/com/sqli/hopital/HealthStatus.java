@@ -7,7 +7,7 @@ public abstract class HealthStatus {
 	private String code;
 
 	/**
-	 * Transitions to the given health status based on cures
+	 * Transitions to the given health state based on cures
 	 * 
 	 * @param cures
 	 *            Cures applied
