@@ -9,7 +9,7 @@ public class Dead extends HealthStatus {
 	}
 
 	@Override
-	public HealthStatus transtition(Set<Cure> cures) {
+	public HealthStatus transition(Set<Cure> cures) {
 		return this;
 	}
 

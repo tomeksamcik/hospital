@@ -27,7 +27,7 @@ public class Patient {
 	}
 
 	public void wait40Days() {
-		setHealthStatus(healthStatus.transtition(cures));
+		setHealthStatus(healthStatus.transition(cures));
 	}
 
 	public void cureWith(Cure cure) {

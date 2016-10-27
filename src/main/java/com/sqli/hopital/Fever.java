@@ -9,7 +9,7 @@ public class Fever extends HealthStatus {
 	}
 
 	@Override
-	public HealthStatus transtition(Set<Cure> cures) {
+	public HealthStatus transition(Set<Cure> cures) {
 		if (isParacetamolCase(cures)) {
 			return new Dead();
 		}

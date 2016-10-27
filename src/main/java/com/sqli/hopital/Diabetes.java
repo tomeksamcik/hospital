@@ -9,7 +9,7 @@ public class Diabetes extends HealthStatus {
 	}
 
 	@Override
-	public HealthStatus transtition(Set<Cure> cures) {
+	public HealthStatus transition(Set<Cure> cures) {
 		Boolean patientSurvives = false;
 		for (Cure cure : cures) {
 			if (cure.helpsDiabetes()) {

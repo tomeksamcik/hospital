@@ -6,7 +6,14 @@ public abstract class HealthStatus {
 
 	private String code;
 
-	public abstract HealthStatus transtition(Set<Cure> cures);
+	/**
+	 * Transitions to the given health status based on cures
+	 * 
+	 * @param cures
+	 *            Cures applied
+	 * @return Health status to be transitioned to
+	 */
+	public abstract HealthStatus transition(Set<Cure> cures);
 
 	public HealthStatus(String code) {
 		this.code = code;
