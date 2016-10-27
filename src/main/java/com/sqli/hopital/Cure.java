@@ -9,4 +9,6 @@ public interface Cure {
 	Boolean helpsTuberculosis();
 
 	Boolean killsWithParacetamol();
+
+	Boolean isParacetamol();
 }

@@ -16,7 +16,7 @@ public abstract class HealthStatus {
 		Boolean paracetamol = false;
 		Boolean killsWithParacetamol = false;
 		for (Cure cure : cures) {
-			if (cure instanceof Paracetamol) {
+			if (cure.isParacetamol()) {
 				paracetamol = true;
 			}
 			if (cure.killsWithParacetamol()) {

@@ -18,4 +18,8 @@ public class Antibiotic implements Cure {
 		return false;
 	}
 
+	public Boolean isParacetamol() {
+		return false;
+	}
+
 }
